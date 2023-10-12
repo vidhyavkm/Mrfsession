@@ -5,8 +5,6 @@ const url = "https://gitlab.com/gvanderput/gerard-movie-filtering/-/raw/master/d
 // mul all by 2=> map=>output=[2,4,6,8,10]
 // print only odd=> filter=> output=>1,3,5
 
-
-
 async function getData(url,cb){
     const res= await fetch(url);
     const data = await res.json();
