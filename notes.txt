@@ -1,0 +1,50 @@
+the traditional method of extracting datas from an api=> XMLhttprequest.
+
+MRF => array methods
+recent => async await along with fetch.
+
+map:
+
+this method is used to create a new array by applying a provided function to each element 
+in the original array.
+
+1. it wont change the length of the array.
+2. it will return a new array.
+3. it always takes function as a parameter.
+
+syntax:
+arr.map(cb(curr,ind,arr))
+
+cb=> a function that defines the transfromation for each element.
+curr=> the current element being processed.
+index=> (optional) index of the current element.
+arr=>(optional) the original array.
+
+filter:
+
+1.it will change the length of the array.
+2. it will return a new array with same elements
+3. it always takes function as a parameter.
+
+syntax:
+arr.filter(cb(element,ind,arr))
+
+cb=> a function that defines the defines the test for each element.
+curr=> the current element being processed.
+index=> (optional) index of the current element.
+arr=>(optional) the original array.
+
+reduce:
+
+1.it will change the length of the array.
+2. it will return a new value or object.
+3. it always takes function as a parameter.
+
+syntax:
+arr.reduce(cb(accu,curr,ind,arr))
+
+cb=> a function that defines the transformation for each element.
+accum=> the accumulated value.
+curr=> the current element being processed.
+index=> (optional) index of the current element.
+arr=>(optional) the original array.
